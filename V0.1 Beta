@@ -1,0 +1,618 @@
+--// Instances
+
+local park_haxx = Instance.new("ScreenGui")
+park_haxx.IgnoreGuiInset = true
+park_haxx.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+park_haxx.ResetOnSpawn = false
+park_haxx.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+park_haxx.Name = "ParkHaxx"
+park_haxx.Parent = workspace
+
+local main_gui = Instance.new("Frame")
+main_gui.AnchorPoint = Vector2.new(0, 0.5)
+main_gui.BackgroundColor3 = Color3.new(0, 0, 0)
+main_gui.Position = UDim2.new(0.0270000007, 0, 1.70000005, 0)
+main_gui.Size = UDim2.new(0.301953822, 0, 0.548561215, 0)
+main_gui.Visible = false
+main_gui.ZIndex = 2
+main_gui.Name = "MainGui"
+main_gui.Parent = park_haxx
+
+local uicorner = Instance.new("UICorner")
+uicorner.CornerRadius = UDim.new(0, 12)
+uicorner.Parent = main_gui
+
+local title = Instance.new("TextLabel")
+title.Font = Enum.Font.Highway
+title.Text = "PARKHAXX"
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextScaled = true
+title.TextSize = 14
+title.TextStrokeColor3 = Color3.new(0.4, 0.4, 0.4)
+title.TextStrokeTransparency = 0
+title.TextWrapped = true
+title.AnchorPoint = Vector2.new(0.5, 0.5)
+title.BackgroundColor3 = Color3.new(1, 1, 1)
+title.BackgroundTransparency = 1
+title.Position = UDim2.new(0.497653365, 0, 0.0852458924, 0)
+title.Size = UDim2.new(0.746480048, 0, 0.0918032676, 0)
+title.Visible = true
+title.ZIndex = 2
+title.Name = "Title"
+title.Parent = main_gui
+
+local uigradient = Instance.new("UIGradient")
+uigradient.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)), ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))})
+uigradient.Rotation = 90
+uigradient.Parent = title
+
+local uiaspect_ratio_constraint = Instance.new("UIAspectRatioConstraint")
+uiaspect_ratio_constraint.AspectRatio = 0.5534169673919678
+uiaspect_ratio_constraint.Parent = main_gui
+
+local uigradient_2 = Instance.new("UIGradient")
+uigradient_2.Rotation = 90
+uigradient_2.Parent = main_gui
+
+local uistroke = Instance.new("UIStroke")
+uistroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke.Thickness = 5
+uistroke.Parent = main_gui
+
+local uigradient_3 = Instance.new("UIGradient")
+uigradient_3.Rotation = 90
+uigradient_3.Parent = uistroke
+
+local realism = Instance.new("ImageButton")
+realism.Image = "http://www.roblox.com/asset/?id=16980931872"
+realism.AnchorPoint = Vector2.new(0.5, 0.5)
+realism.BackgroundColor3 = Color3.new(1, 1, 1)
+realism.BackgroundTransparency = 1
+realism.Position = UDim2.new(0.497653365, 0, 0.822950721, 0)
+realism.Size = UDim2.new(0.414711118, 0, 0.229508176, 0)
+realism.Visible = true
+realism.ZIndex = 2
+realism.Name = "Realism"
+realism.Parent = main_gui
+
+local uicorner_2 = Instance.new("UICorner")
+uicorner_2.CornerRadius = UDim.new(1, 0)
+uicorner_2.Parent = realism
+
+local sounds = Instance.new("Folder")
+sounds.Name = "Sounds"
+sounds.Parent = realism
+
+local hover = Instance.new("Sound")
+hover.SoundId = "rbxassetid://6333717580"
+hover.Name = "Hover"
+hover.Parent = sounds
+
+local click = Instance.new("Sound")
+click.SoundId = "rbxassetid://720166642"
+click.Name = "Click"
+click.Parent = sounds
+
+local uigradient_4 = Instance.new("UIGradient")
+uigradient_4.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.392157, 0.392157, 0.392157))})
+uigradient_4.Rotation = 135
+uigradient_4.Parent = realism
+
+local button = Instance.new("LocalScript")
+button.Name = "Button"
+button.Parent = realism
+
+local idk = Instance.new("ImageButton")
+idk.Image = "http://www.roblox.com/asset/?id=15063793838"
+idk.ImageColor3 = Color3.new(1, 0, 0)
+idk.AnchorPoint = Vector2.new(0.5, 0.5)
+idk.BackgroundColor3 = Color3.new(1, 1, 1)
+idk.BackgroundTransparency = 1
+idk.Position = UDim2.new(0.497653365, 0, 0.557376981, 0)
+idk.Size = UDim2.new(0.414711118, 0, 0.229508176, 0)
+idk.Visible = true
+idk.ZIndex = 2
+idk.Name = "idk"
+idk.Parent = main_gui
+
+local uicorner_3 = Instance.new("UICorner")
+uicorner_3.CornerRadius = UDim.new(1, 0)
+uicorner_3.Parent = idk
+
+local background = Instance.new("ImageLabel")
+background.Image = "http://www.roblox.com/asset/?id=789367660"
+background.AnchorPoint = Vector2.new(0.5, 0.5)
+background.BackgroundColor3 = Color3.new(1, 1, 1)
+background.BackgroundTransparency = 1
+background.Position = UDim2.new(0.5, 0, 0.5, 0)
+background.Size = UDim2.new(1, 0, 1, 0)
+background.Visible = true
+background.Name = "Background"
+background.Parent = main_gui
+
+local uicorner_4 = Instance.new("UICorner")
+uicorner_4.CornerRadius = UDim.new(0, 12)
+uicorner_4.Parent = background
+
+local uigradient_5 = Instance.new("UIGradient")
+uigradient_5.Rotation = 90
+uigradient_5.Parent = background
+
+local gear = Instance.new("ImageButton")
+gear.Image = "rbxassetid://9461879061"
+gear.AnchorPoint = Vector2.new(0.5, 0.5)
+gear.BackgroundColor3 = Color3.new(1, 1, 1)
+gear.BackgroundTransparency = 1
+gear.Position = UDim2.new(0.497653365, 0, 0.291803241, 0)
+gear.Size = UDim2.new(0.414711118, 0, 0.229508176, 0)
+gear.Visible = true
+gear.ZIndex = 2
+gear.Name = "Gear"
+gear.Parent = main_gui
+
+local uicorner_5 = Instance.new("UICorner")
+uicorner_5.CornerRadius = UDim.new(1, 0)
+uicorner_5.Parent = gear
+
+local sounds_2 = Instance.new("Folder")
+sounds_2.Name = "Sounds"
+sounds_2.Parent = gear
+
+local hover_2 = Instance.new("Sound")
+hover_2.SoundId = "rbxassetid://6333717580"
+hover_2.Name = "Hover"
+hover_2.Parent = sounds_2
+
+local click_2 = Instance.new("Sound")
+click_2.SoundId = "rbxassetid://720166642"
+click_2.Name = "Click"
+click_2.Parent = sounds_2
+
+local uigradient_6 = Instance.new("UIGradient")
+uigradient_6.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)), ColorSequenceKeypoint.new(1, Color3.new(0.392157, 0.392157, 0.392157))})
+uigradient_6.Rotation = 135
+uigradient_6.Parent = gear
+
+local button_2 = Instance.new("LocalScript")
+button_2.Name = "Button"
+button_2.Parent = gear
+
+local loading = Instance.new("Frame")
+loading.AnchorPoint = Vector2.new(0.5, 0.5)
+loading.BackgroundColor3 = Color3.new(0, 0, 0)
+loading.BackgroundTransparency = 1
+loading.BorderSizePixel = 0
+loading.Position = UDim2.new(0.5, 0, 0.5, 0)
+loading.Size = UDim2.new(0.620000005, 0, 0.360000014, 0)
+loading.Visible = true
+loading.Name = "Loading"
+loading.Parent = park_haxx
+
+local loading1 = Instance.new("TextLabel")
+loading1.Font = Enum.Font.SourceSans
+loading1.TextColor3 = Color3.new(0, 0, 0)
+loading1.TextSize = 14
+loading1.TextTransparency = 1
+loading1.AnchorPoint = Vector2.new(0.5, 0.5)
+loading1.BackgroundColor3 = Color3.new(0, 0, 0)
+loading1.Position = UDim2.new(0.5, 0, 0.857547879, 0)
+loading1.Size = UDim2.new(0.5, 0, 0.100000001, 0)
+loading1.Visible = true
+loading1.ZIndex = 3
+loading1.Name = "Loading1"
+loading1.Parent = loading
+
+local uicorner_6 = Instance.new("UICorner")
+uicorner_6.CornerRadius = UDim.new(0, 5)
+uicorner_6.Parent = loading1
+
+local uistroke_2 = Instance.new("UIStroke")
+uistroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_2.Color = Color3.new(0.4, 0.4, 0.4)
+uistroke_2.Thickness = 2
+uistroke_2.Parent = loading1
+
+local loading2 = Instance.new("TextLabel")
+loading2.Font = Enum.Font.SourceSans
+loading2.TextColor3 = Color3.new(0, 0, 0)
+loading2.TextSize = 14
+loading2.TextTransparency = 1
+loading2.AnchorPoint = Vector2.new(0, 0.5)
+loading2.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+loading2.Position = UDim2.new(0, 0, 0.5, 0)
+loading2.Size = UDim2.new(0.0500000007, 0, 1, 0)
+loading2.Visible = false
+loading2.ZIndex = 3
+loading2.Name = "Loading2"
+loading2.Parent = loading1
+
+local uicorner_7 = Instance.new("UICorner")
+uicorner_7.CornerRadius = UDim.new(0, 5)
+uicorner_7.Parent = loading2
+
+local loading_2 = Instance.new("LocalScript")
+loading_2.Disabled = true
+loading_2.Name = "Loading"
+loading_2.Parent = loading2
+
+local uistroke_3 = Instance.new("UIStroke")
+uistroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_3.Color = Color3.new(0.4, 0.4, 0.4)
+uistroke_3.Thickness = 2
+uistroke_3.Parent = loading2
+
+local uigradient_7 = Instance.new("UIGradient")
+uigradient_7.Rotation = 90
+uigradient_7.Parent = loading1
+
+local loadinglabel = Instance.new("TextLabel")
+loadinglabel.Font = Enum.Font.Code
+loadinglabel.Text = "Loading"
+loadinglabel.TextColor3 = Color3.new(1, 1, 1)
+loadinglabel.TextScaled = true
+loadinglabel.TextSize = 14
+loadinglabel.TextStrokeColor3 = Color3.new(0.4, 0.4, 0.4)
+loadinglabel.TextStrokeTransparency = 0
+loadinglabel.TextWrapped = true
+loadinglabel.AnchorPoint = Vector2.new(0.5, 0.5)
+loadinglabel.BackgroundColor3 = Color3.new(1, 1, 1)
+loadinglabel.BackgroundTransparency = 1
+loadinglabel.Position = UDim2.new(0.5, 0, 0.192674562, 0)
+loadinglabel.Size = UDim2.new(0.5, 0, 0.155349299, 0)
+loadinglabel.Visible = true
+loadinglabel.ZIndex = 2
+loadinglabel.Name = "LoadingLabel"
+loadinglabel.Parent = loading
+
+local uigradient_8 = Instance.new("UIGradient")
+uigradient_8.Color = ColorSequence.new({ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)), ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0))})
+uigradient_8.Rotation = 90
+uigradient_8.Parent = loadinglabel
+
+local background_2 = Instance.new("ImageLabel")
+background_2.Image = "http://www.roblox.com/asset/?id=13484839618"
+background_2.BackgroundColor3 = Color3.new(1, 1, 1)
+background_2.BackgroundTransparency = 1
+background_2.BorderColor3 = Color3.new(0, 0, 0)
+background_2.BorderSizePixel = 0
+background_2.Size = UDim2.new(1, 0, 1, 0)
+background_2.Visible = true
+background_2.Name = "Background"
+background_2.Parent = loading
+
+local uicorner_8 = Instance.new("UICorner")
+uicorner_8.Parent = background_2
+
+local uiaspect_ratio_constraint_2 = Instance.new("UIAspectRatioConstraint")
+uiaspect_ratio_constraint_2.AspectRatio = 1.7439048290252686
+uiaspect_ratio_constraint_2.Parent = loading
+
+local vignette = Instance.new("ImageLabel")
+vignette.Image = "http://www.roblox.com/asset/?id=4576475446"
+vignette.BackgroundColor3 = Color3.new(1, 1, 1)
+vignette.BackgroundTransparency = 1
+vignette.BorderColor3 = Color3.new(0, 0, 0)
+vignette.BorderSizePixel = 0
+vignette.Size = UDim2.new(1, 0, 1, 0)
+vignette.Visible = true
+vignette.Name = "Vignette"
+vignette.Parent = loading
+
+local uicorner_9 = Instance.new("UICorner")
+uicorner_9.Parent = vignette
+
+local uistroke_4 = Instance.new("UIStroke")
+uistroke_4.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_4.Thickness = 2
+uistroke_4.Parent = loading
+
+local uicorner_10 = Instance.new("UICorner")
+uicorner_10.Parent = loading
+
+local load = Instance.new("LocalScript")
+load.Name = "Load"
+load.Parent = park_haxx
+
+local gear_ui = Instance.new("Frame")
+gear_ui.AnchorPoint = Vector2.new(1, 0.5)
+gear_ui.BackgroundColor3 = Color3.new(0, 0, 0)
+gear_ui.Position = UDim2.new(1.35000002, 0, 0.5, 0)
+gear_ui.Size = UDim2.new(0.301999986, 0, 1, 0)
+gear_ui.Visible = true
+gear_ui.ZIndex = 2
+gear_ui.Name = "GearUI"
+gear_ui.Parent = park_haxx
+
+local uistroke_5 = Instance.new("UIStroke")
+uistroke_5.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_5.Thickness = 5
+uistroke_5.Parent = gear_ui
+
+local background_3 = Instance.new("ImageLabel")
+background_3.Image = "http://www.roblox.com/asset/?id=789367660"
+background_3.AnchorPoint = Vector2.new(0.5, 0.5)
+background_3.BackgroundColor3 = Color3.new(1, 1, 1)
+background_3.BackgroundTransparency = 1
+background_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+background_3.Size = UDim2.new(1, 0, 1, 0)
+background_3.Visible = true
+background_3.Name = "Background"
+background_3.Parent = gear_ui
+
+local title_2 = Instance.new("TextLabel")
+title_2.Font = Enum.Font.Unknown
+title_2.Text = "GEAR"
+title_2.TextColor3 = Color3.new(1, 1, 1)
+title_2.TextScaled = true
+title_2.TextSize = 14
+title_2.TextStrokeColor3 = Color3.new(0.4, 0.4, 0.4)
+title_2.TextStrokeTransparency = 0
+title_2.TextWrapped = true
+title_2.AnchorPoint = Vector2.new(0.5, 0.5)
+title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+title_2.BackgroundTransparency = 1
+title_2.Position = UDim2.new(0.5, 0, 0.0927113742, 0)
+title_2.Size = UDim2.new(0.75, 0, 0.0799295753, 0)
+title_2.Visible = true
+title_2.ZIndex = 2
+title_2.Name = "Title"
+title_2.Parent = gear_ui
+
+local realism_ui = Instance.new("Frame")
+realism_ui.AnchorPoint = Vector2.new(1, 0.5)
+realism_ui.BackgroundColor3 = Color3.new(0, 0, 0)
+realism_ui.Position = UDim2.new(1.35000002, 0, 0.5, 0)
+realism_ui.Size = UDim2.new(0.301999986, 0, 1, 0)
+realism_ui.Visible = true
+realism_ui.ZIndex = 2
+realism_ui.Name = "RealismUI"
+realism_ui.Parent = park_haxx
+
+local uistroke_6 = Instance.new("UIStroke")
+uistroke_6.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+uistroke_6.Thickness = 5
+uistroke_6.Parent = realism_ui
+
+local background_4 = Instance.new("ImageLabel")
+background_4.Image = "http://www.roblox.com/asset/?id=789367660"
+background_4.AnchorPoint = Vector2.new(0.5, 0.5)
+background_4.BackgroundColor3 = Color3.new(1, 1, 1)
+background_4.BackgroundTransparency = 1
+background_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+background_4.Size = UDim2.new(1, 0, 1, 0)
+background_4.Visible = true
+background_4.Name = "Background"
+background_4.Parent = realism_ui
+
+local title_3 = Instance.new("TextLabel")
+title_3.Font = Enum.Font.Unknown
+title_3.Text = "REALISM"
+title_3.TextColor3 = Color3.new(1, 1, 1)
+title_3.TextScaled = true
+title_3.TextSize = 14
+title_3.TextStrokeColor3 = Color3.new(0.4, 0.4, 0.4)
+title_3.TextStrokeTransparency = 0
+title_3.TextWrapped = true
+title_3.AnchorPoint = Vector2.new(0.5, 0.5)
+title_3.BackgroundColor3 = Color3.new(1, 1, 1)
+title_3.BackgroundTransparency = 1
+title_3.Position = UDim2.new(0.5, 0, 0.0927113742, 0)
+title_3.Size = UDim2.new(0.75, 0, 0.0799295753, 0)
+title_3.Visible = true
+title_3.ZIndex = 2
+title_3.Name = "Title"
+title_3.Parent = realism_ui
+
+--//Modules
+
+local modules = {}
+
+--// Scripts
+
+-- Button
+task.spawn(function()
+	local script = button
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	local Button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local Open = false
+	local RealismSlide = script.Parent.Parent.Parent.GearUI
+	local Audio = script.Parent.Sounds
+	
+	Button.MouseEnter:Connect(function()
+		local Info = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+		local Tween = TweenService:Create(Button, Info, {Size = UDim2.new(0.45, 0, 0.25, 0)})
+		
+		Tween:Play()
+		Audio.Hover:Play()
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		local Info = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+		local Tween = TweenService:Create(Button, Info, {Size = UDim2.new(0.415, 0, 0.23, 0)})
+		
+		Tween:Play()
+		Audio.Hover:Play()
+	end)
+	
+	Button.Activated:Connect(function()
+		Audio.Click:Play()
+		local Info = TweenInfo.new(0.15, Enum.EasingStyle.Circular, Enum.EasingDirection.In)
+		
+		local Tween1 = TweenService:Create(Button, Info, {Size = UDim2.new(0.355, 0, 0.2, 0)})
+		Tween1:Play()
+		
+		Tween1.Completed:Connect(function()
+			local Tween2 = TweenService:Create(Button, Info, {Size = UDim2.new(0.415, 0, 0.23, 0)})
+			Tween2:Play()
+		end)
+		
+		if Open == false then
+			local Info = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+			local Tween = TweenService:Create(RealismSlide, Info, {Position = UDim2.new(1, 0, 0.5, 0)})
+			Tween:Play()
+			Open = true
+		else
+			local Info = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+			local Tween = TweenService:Create(RealismSlide, Info, {Position = UDim2.new(1.4, 0, 0.5, 0)})
+			Tween:Play()
+			Open = false
+		end
+	end)
+end)
+
+-- Button
+task.spawn(function()
+	local script = button_2
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	local Button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	local Open = false
+	local GearSlide = script.Parent.Parent.Parent.GearUI
+	local Audio = script.Parent.Sounds
+	
+	Button.MouseEnter:Connect(function()
+		local Info = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+		local Tween = TweenService:Create(Button, Info, {Size = UDim2.new(0.45, 0, 0.25, 0)})
+		
+		Tween:Play()
+		Audio.Hover:Play()
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		local Info = TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+		local Tween = TweenService:Create(Button, Info, {Size = UDim2.new(0.415, 0, 0.23, 0)})
+		
+		Tween:Play()
+		Audio.Hover:Play()
+	end)
+	
+	Button.Activated:Connect(function()
+		Audio.Click:Play()
+		local Info = TweenInfo.new(0.15, Enum.EasingStyle.Circular, Enum.EasingDirection.In)
+		
+		local Tween1 = TweenService:Create(Button, Info, {Size = UDim2.new(0.355, 0, 0.2, 0)})
+		Tween1:Play()
+		
+		Tween1.Completed:Connect(function()
+			local Tween2 = TweenService:Create(Button, Info, {Size = UDim2.new(0.415, 0, 0.23, 0)})
+			Tween2:Play()
+		end)
+		
+		if Open == false then
+			local Info = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+			local Tween = TweenService:Create(GearSlide, Info, {Position = UDim2.new(1, 0, 0.5, 0)})
+			Tween:Play()
+			Open = true
+		else
+			local Info = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+			local Tween = TweenService:Create(GearSlide, Info, {Position = UDim2.new(1.4, 0, 0.5, 0)})
+			Tween:Play()
+			Open = false
+		end
+	end)
+end)
+
+-- Loading
+task.spawn(function()
+	local script = loading_2
+	script.Disabled = true
+
+	script:GetPropertyChangedSignal("Disabled"):Wait()
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	
+	local prog = 0
+	
+	while wait() do
+		prog = prog + 0.125
+		script.Parent.Size = UDim2.new(prog/100, 0, 0.1, 0)
+		script.Parent.Parent.LoadingLabel.Text = ("Loading... " ..math.floor(prog*2).. "%")
+		if prog == 50 then
+			script.Parent.Parent.LoadingProgress.Text = ("Loaded Vexecutor" ..script.Parent.Parent.Parent.VersionOfVexecutor.Value.. " Successfully")
+			wait(1)
+			script.Parent.Parent:Destroy()
+		end
+	end
+	
+	
+end)
+
+-- Load
+task.spawn(function()
+	local script = load
+
+	local oldreq = require
+	local function require(target)
+		if modules[target] then
+			return modules[target]()
+		end
+		return oldreq(target)
+	end
+
+	task.wait(7.62)
+	local LoadFrame = script.Parent.Loading
+	script.Parent.Enabled = true
+	
+	local Bar = LoadFrame.Loading1.Loading2
+	
+	local TweenService = game:GetService("TweenService")
+	local BarTweenInfo = TweenInfo.new(math.random(5, 6), Enum.EasingStyle.Quint, Enum.EasingDirection.In)
+	local Tween = TweenService:Create(Bar, BarTweenInfo, {Size = UDim2.new(1, 0, 1, 0)})
+	Bar.Visible = true
+	Tween:Play()
+	
+	Tween.Completed:Connect(function()
+		LoadFrame.LoadingLabel.Text = "Loaded"
+		task.wait(1.2)
+		local NewInfo = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.In)
+		local Object1 = script.Parent.Loading.Vignette
+		local Tween1 = TweenService:Create(Object1, NewInfo, {ImageTransparency = 1})
+		Tween1:Play()
+		
+		local Object2 = script.Parent.Loading.Background
+		local Tween2 = TweenService:Create(Object2, NewInfo, {ImageTransparency = 1})
+		Tween2:Play()
+		
+		local Object3 = script.Parent.Loading.LoadingLabel
+		local Tween3 = TweenService:Create(Object3, NewInfo, {TextTransparency = 1})
+		Tween3:Play()
+		
+		local Object4 = script.Parent.Loading.UIStroke
+		local Tween4 = TweenService:Create(Object4, NewInfo, {Transparency = 1})
+		Tween4:Play()
+		
+		script.Parent.Loading.Loading1:Destroy()
+		
+		Tween4.Completed:Connect(function()
+			script.Parent.MainGui.Visible = true
+			LoadFrame:Destroy()
+			local Info2 = TweenInfo.new(2, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+			local Tween5 = TweenService:Create(script.Parent.MainGui, Info2, {Position = UDim2.new(0.027, 0, 0.7, 0)})
+			Tween5:Play()
+		end)
+	end)
+end)
